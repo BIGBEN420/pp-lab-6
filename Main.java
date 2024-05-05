@@ -31,10 +31,11 @@ public class Main {
         System.out.println("Całkowita suma pensji wszystkich Managerów: " + totalManagerSalary);
         System.out.println("Całkowita suma pensji wszystkich Workerów: " + totalWorkerSalary);
 
+        System.out.println("\nInstancje pracowników z odpowiednimi ID:");
         for (Employee e : employees) {
             for (Employee o : employees) {
-                if (!e.equals(o) && e.getId().equals(o.getId())) {
-                    System.out.println(e.getName() + " (ID: " + e.getId() + ") has the same ID as: " + o.getName()+" (ID: "+o.getId()+")");
+                if (e.getId() == o.getId() && e != o) {
+                    System.out.println(e.getName() + " (ID: " + e.getId() + ") ma to samo ID co : " + o.getName()+" ID ("+o.getId()+")");
                 }
             }
         }
