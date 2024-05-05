@@ -32,7 +32,7 @@ public abstract class Employee implements Employable {
     }
     @Override
     public int hashCode() {
-        return id;
+        return Objects.hash(id);
     }
     @Override
     public boolean equals(Object obj) {
