@@ -17,7 +17,7 @@ public class Main {
             System.out.println(e.getName() + " has code: " + e.hashCode());
         }
     
-        System.out.println("porównywanie w1 o ID:1 z resztą pracowników");
+        System.out.println("Comparing w1 with ID 1 with the rest of the employees");
         for (Employee e : employees) {
             System.out.println("Comparing " + w1.getName() + " and " + e.getName() + ": " + w1.equals(e));
         }
