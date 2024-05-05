@@ -14,7 +14,7 @@ public class Main {
 
         for (Employee e : employees) {
             e.work();
-            System.out.println("-" + e.getName() + " (ID: " + e.getId() + ", Position: " + e.getPosition() + ", Hire date: " + e.getHireDate() + ", Salary: PLN" + e.getSalary());
+            System.out.println("-" + e.getName() + " (ID: " + e.getId() + ", Position: " + e.getPosition() + ", Hire date: " + e.getHireDate() + ", Salary: PLN " + e.getSalary());
         }
     }
 }
